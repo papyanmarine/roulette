@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Popap</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup-bg">
+        <div class="popup-window">
+            <div class="popup-window-wrap">
+                <div class="popup-time">
+                    <div class="popup-time-row">
+                        <div class="time-title">
+                            <p>Это предложение закончиться через</p>
+                        </div>
+                        <div class="time-value">
+                            <div class="day time-value-item">
+                                <p class="value-txt">дней</p>
+                                <p class="value-num">0</p>
+                            </div>
+                            <div class="hour time-value-item">
+                                <p class="value-txt">часов</p>
+                                <p class="value-num">0</p>
+                            </div>
+                            <div class="min time-value-item">
+                                <p class="value-txt">минут</p>
+                                <p class="value-num">0</p>
+                            </div> 
+                            <div class="sec time-value-item">
+                                <p class="value-txt">секунд</p>
+                                <p class="value-num">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roulette-popup">
+                    <div class="roulette-popup-container">
+                        <div class="roullete-contain roullete-block">
+                            <div class="rotate-shadow">
+                                <div class="rotate-block">
+                                    <div class="rotate-sections">
+                                        <div class="rotate-sector one" ></div>
+                                        <div class="rotate-sector two" ></div>
+                                        <div class="rotate-sector three" ></div>
+                                        <div class="rotate-sector four" ></div>
+                                        <div class="rotate-sector five"></div>
+                                        <div class="rotate-sector six"></div>
+                                        <div class="rotate-sector seven" ></div>
+                                        <div class="rotate-sector eith"></div>
+                                    </div>
+                                    <div class="rotate-text-block">
+                                        <div class="rotate-text nothing">
+                                            Не удача
+                                        </div>
+                                        <div class="rotate-text sale">
+                                            Скидка 30%
+                                        </div>
+                                        <div class="rotate-text nothing">
+                                            Не повезло
+                                        </div>
+                                        <div class="rotate-text sale">
+                                            Скидка 20%
+                                        </div>
+                                        <div class="rotate-text nothing">
+                                            Не в этот раз
+                                        </div>
+                                        <div class="rotate-text nothing">
+                                            Без выигрыша
+                                        </div>
+                                        <div class="rotate-text sale">
+                                            Скидка 10%
+                                        </div>
+                                        <div class="rotate-text nothing">
+                                            Увы
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path style="fill:#FD003A;" d="M256,0C156.698,0,76,80.7,76,180c0,33.6,9.302,66.301,27.001,94.501l140.797,230.414
+                                    c2.402,3.9,6.002,6.301,10.203,6.901c5.698,0.899,12.001-1.5,15.3-7.2l141.2-232.516C427.299,244.501,436,212.401,436,180
+                                    C436,80.7,355.302,0,256,0z M256,270c-50.398,0-90-40.8-90-90c0-49.501,40.499-90,90-90s90,40.499,90,90
+                                    C346,228.9,306.999,270,256,270z"></path>
+                                            <path style="fill:#E50027;" d="M256,0v90c49.501,0,90,40.499,90,90c0,48.9-39.001,90-90,90v241.991
+                                    c5.119,0.119,10.383-2.335,13.3-7.375L410.5,272.1c16.799-27.599,25.5-59.699,25.5-92.1C436,80.7,355.302,0,256,0z"></path>
+                                            <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="roulette-info roullete-block">
+                            <h1 class="roulette-title">
+                                Испытайте удачу!
+                            </h1>
+                            <h2 class="roulette-subtitle hide">
+                                У вас есть шанс получить скидку!
+                            </h2>
+                            <p class="roulette-result d-none">
+                                Поздравляем, Вы выиграли!<br>Ваш подарок был отправлен на указанный вами Email
+                            </p>
+                            <p class="roulette-result-nothing d-none ">
+                                К сожалению удача обошла вас стороной
+                            </p>
+                            <p class="empty"></p>
+                            <div class="roulette-input-block hide">
+                                <div class="input-wrap">
+                                    <input type="email" name="useremail" id="user-email" 
+                                    class="user-email" placeholder="Введите Ваш Email">
+                                </div>    
+                                <p class="resul-fail d-none">
+                                    Неверный E-mail
+                                    <span></span>
+                                </p>
+                                <p class="result-not-unique d-none">
+                                    Данный Email уже используется
+                                    <span></span>
+                                </p>
+                                <p class="not-vali-email d-none">
+                                    Введите корректный E-mail
+                                    <span></span>
+                                </p>
+                            </div>
+                            <div class="roulette-button-wrap hide">
+                                <button class="roulette-button"> Испытайте удачу</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-window-close-button"></div>                
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="./src/index.js"></script>
+</body>
+</html>
